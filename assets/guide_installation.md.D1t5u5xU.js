@@ -1,0 +1,13 @@
+import { _ as _export_sfc, o as openBlock, c as createElementBlock, a5 as createStaticVNode } from "./chunks/framework.4ItlIeB-.js";
+const __pageData = JSON.parse('{"title":"安装要求","description":"","frontmatter":{},"headers":[],"relativePath":"guide/installation.md","filePath":"guide/installation.md","lastUpdated":1789049035000}');
+const _sfc_main = { name: "guide/installation.md" };
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", null, [..._cache[0] || (_cache[0] = [
+    createStaticVNode('<h1 id="安装要求" tabindex="-1">安装要求 <a class="header-anchor" href="#安装要求" aria-label="Permalink to “安装要求”">​</a></h1><p>本文档仅整理当前项目 README 中确认的运行要求。具体 APK 获取方式以项目发布页、群内公告或后续维护文档为准。</p><h2 id="系统要求" tabindex="-1">系统要求 <a class="header-anchor" href="#系统要求" aria-label="Permalink to “系统要求”">​</a></h2><table tabindex="0"><thead><tr><th>项目</th><th>要求</th></tr></thead><tbody><tr><td>Android 版本</td><td>Android 8.0（API 26）及以上</td></tr><tr><td>CPU 架构</td><td>当前原生引擎库提供 <code>arm64-v8a</code></td></tr><tr><td>存储访问</td><td>需要通过系统文件选择器（SAF）授权游戏目录</td></tr><tr><td>外置存储</td><td>部分引擎可能需要“所有文件访问”权限</td></tr></tbody></table><h2 id="文件位置" tabindex="-1">文件位置 <a class="header-anchor" href="#文件位置" aria-label="Permalink to “文件位置”">​</a></h2><p>游戏目录需要位于 Android 可访问的本地存储中。启动时，目录必须能够映射为真实文件路径；如果游戏位于外置存储，某些原生引擎在读取文件时可能需要额外权限。</p><h2 id="外置引擎模块" tabindex="-1">外置引擎模块 <a class="header-anchor" href="#外置引擎模块" aria-label="Permalink to “外置引擎模块”">​</a></h2><p>Ren&#39;Py 与 RPG Maker XP/VX/VX Ace/mkxp-z 当前通过外置 APK 引擎模块运行。主 App 会在引擎页检测目标模块是否已安装；未安装时，相关引擎项会显示不可用并提示下载或安装。</p><p>Ren&#39;Py 支持 8.5 与 7.7.1 模块。自动模式会读取 <code>script_version</code> 与 Python2 运行库特征，在两个模块之间进行匹配。</p>', 9)
+  ])]);
+}
+const installation = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+export {
+  __pageData,
+  installation as default
+};

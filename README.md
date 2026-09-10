@@ -22,6 +22,14 @@ npm run docs:build
 
 The generated static site is written to `.vitepress/dist`.
 
+To publish the generated files to the repository root for compatibility with
+legacy GitHub Pages configuration, run:
+
+```bash
+npm run docs:publish
+```
+
 ## Deploy
 
-GitHub Actions builds the VitePress site and deploys `.vitepress/dist` to GitHub Pages on pushes to `main`.
+GitHub Actions builds the VitePress site, syncs its output to the repository
+root, and deploys `.vitepress/dist` to GitHub Pages on pushes to `main`.

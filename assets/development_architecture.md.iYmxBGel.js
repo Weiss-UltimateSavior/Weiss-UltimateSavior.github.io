@@ -1,0 +1,13 @@
+import { _ as _export_sfc, o as openBlock, c as createElementBlock, a5 as createStaticVNode } from "./chunks/framework.4ItlIeB-.js";
+const __pageData = JSON.parse('{"title":"架构说明","description":"","frontmatter":{},"headers":[],"relativePath":"development/architecture.md","filePath":"development/architecture.md","lastUpdated":1789049035000}');
+const _sfc_main = { name: "development/architecture.md" };
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", null, [..._cache[0] || (_cache[0] = [
+    createStaticVNode('<h1 id="架构说明" tabindex="-1">架构说明 <a class="header-anchor" href="#架构说明" aria-label="Permalink to “架构说明”">​</a></h1><p>项目按职责划分为三层，依赖方向固定为：</p><div class="language-text"><button title="Copy Code" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span>界面 UI 交互层 -&gt; 功能抽象层 -&gt; 底层引擎层</span></span></code></pre></div><h2 id="底层引擎层" tabindex="-1">底层引擎层 <a class="header-anchor" href="#底层引擎层" aria-label="Permalink to “底层引擎层”">​</a></h2><p>底层引擎层位于 <code>engine/</code>，负责 KRKR/Kirikiroid、krkrsdl3、ONS、Artemis、Tyrano、SDL/Cocos/IJK、Native/JNI、引擎宿主 Activity、引擎资源与 Native 插件底层加载。</p><h2 id="功能抽象层" tabindex="-1">功能抽象层 <a class="header-anchor" href="#功能抽象层" aria-label="Permalink to “功能抽象层”">​</a></h2><p>功能抽象层位于 <code>app/src/main/java/com/tyranor/next/core/</code>，负责游戏扫描、游戏模型、启动编排、封面抓取、存档管理、在线补丁、应用/引擎/单游戏配置、授权和后台更新。</p><p>主要领域包括：</p><ul><li><code>core/game</code>：游戏模型、扫描、启动、存档管理。</li><li><code>core/engine</code>：引擎类型、内置引擎插件启动与安装编排、外置 APK 引擎模块注册与启动协议。</li><li><code>core/cover</code>：封面抓取、来源聚合、批量任务。</li><li><code>core/patch</code>：KRKR 在线补丁。</li><li><code>core/settings</code>：应用级配置、引擎级配置、单游戏配置。</li><li><code>core/auth</code>：Hikarinagi OAuth 授权与 token 管理。</li><li><code>core/updater</code>：后台更新检查与通知。</li><li><code>core/unpack</code>：引擎相关封包解包辅助。</li></ul><h2 id="界面-ui-交互层" tabindex="-1">界面 UI 交互层 <a class="header-anchor" href="#界面-ui-交互层" aria-label="Permalink to “界面 UI 交互层”">​</a></h2><p>界面层位于 <code>app/src/main/java/com/tyranor/next/ui/</code>，负责 Compose 页面、Activity 壳、弹窗、导航、顶部栏、搜索框、用户输入、加载态和错误态。</p><p>主要页面域包括 <code>ui/main</code>、<code>ui/home</code>、<code>ui/game</code>、<code>ui/engine</code>、<code>ui/settings</code>、<code>ui/cover</code>、<code>ui/patch</code>、<code>ui/save</code>、<code>ui/auth</code> 与 <code>ui/common</code>。</p>', 12)
+  ])]);
+}
+const architecture = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+export {
+  __pageData,
+  architecture as default
+};

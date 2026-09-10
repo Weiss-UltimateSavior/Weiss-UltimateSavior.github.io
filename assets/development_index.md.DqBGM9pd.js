@@ -1,0 +1,13 @@
+import { _ as _export_sfc, o as openBlock, c as createElementBlock, a5 as createStaticVNode } from "./chunks/framework.4ItlIeB-.js";
+const __pageData = JSON.parse('{"title":"开发概览","description":"","frontmatter":{},"headers":[],"relativePath":"development/index.md","filePath":"development/index.md","lastUpdated":1789049035000}');
+const _sfc_main = { name: "development/index.md" };
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", null, [..._cache[0] || (_cache[0] = [
+    createStaticVNode('<h1 id="开发概览" tabindex="-1">开发概览 <a class="header-anchor" href="#开发概览" aria-label="Permalink to “开发概览”">​</a></h1><p>Tyranor Next 是一个 Android 项目，主要由 <code>app</code> 与 <code>engine</code> 两个模块组成。</p><h2 id="模块职责" tabindex="-1">模块职责 <a class="header-anchor" href="#模块职责" aria-label="Permalink to “模块职责”">​</a></h2><table tabindex="0"><thead><tr><th>模块</th><th>职责</th></tr></thead><tbody><tr><td><code>app</code></td><td>Android 应用壳、Compose UI、功能抽象层、配置、封面、存档、授权和后台更新</td></tr><tr><td><code>engine</code></td><td>底层引擎运行时核心、SDL、Kirikiri TVP、krkrsdl3、ONScripter、Artemis、Tyrano、Native/JNI 与引擎宿主 Activity</td></tr></tbody></table><h2 id="技术栈" tabindex="-1">技术栈 <a class="header-anchor" href="#技术栈" aria-label="Permalink to “技术栈”">​</a></h2><ul><li>Kotlin，部分引擎层包含 Java 桥接代码。</li><li>Jetpack Compose、Material 3 与 Miuix。</li><li>Gradle 9.5.1、AGP 9.2.1、Kotlin 2.x 与 Compose Compiler。</li><li><code>compileSdk 37</code>、<code>minSdk 26</code>、<code>targetSdk 36</code>。</li><li>SharedPreferences 管理扫描结果、引擎设置、单游戏覆盖和最近记录。</li><li>Storage Access Framework 管理外部游戏目录访问。</li></ul><h2 id="构建命令" tabindex="-1">构建命令 <a class="header-anchor" href="#构建命令" aria-label="Permalink to “构建命令”">​</a></h2><div class="language-bash"><button title="Copy Code" class="copy"></button><span class="lang">bash</span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">./gradlew</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> assembleDebug</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> --no-daemon</span></span></code></pre></div><p>Debug APK 产物位于 <code>app/build/outputs/apk/debug/</code>。本地构建需要 Android SDK 与对应平台环境。</p>', 9)
+  ])]);
+}
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+export {
+  __pageData,
+  index as default
+};
